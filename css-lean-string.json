@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "scopeName": "inline.css-lean-string",
+  "fileTypes": ["js", "jsx", "mjs", "ts", "tsx"],
+  "injectionSelector": "L:source.js -comment -(string -meta.embedded), L:source.jsx -comment -(string -meta.embedded),  L:source.js.jsx -comment -(string -meta.embedded), L:source.ts -comment -(string -meta.embedded), L:source.tsx -comment -(string -meta.embedded)",
+  "patterns": [
+    {
+      "name": "string.js.taggedTemplate",
+      "contentName": "meta.embedded.block.css",
+      "begin": "(?x)(\\b(?:z|css|b)\\s*)(`)",
+      "beginCaptures": {
+        "1": {
+          "name": "entity.name.function.tagged-template.js"
+        },
+        "2": {
+          "name": "string.js"
+        },
+        "3": {
+          "name": "punctuation.definition.string.template.begin.js"
+        }
+      },
+      "end": "(`)",
+      "endCaptures": {
+        "0": {
+          "name": "string.js"
+        },
+        "1": {
+          "name": "punctuation.definition.string.template.end.js"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.ts#template-substitution-element"
+        },
+        {
+          "include": "#lean-css"
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "lean-css": {
+      "patterns": [
+        {
+          "match": "([^\\{]+(?=\\{))",
+          "name": "meta.selector.css"
+        },
+        {
+          "match": "(\\s*[\\{]\\s*)",
+          "name": "punctuation.section.property-list.begin.bracket.curly.css"
+        },
+        {
+          "match": "(\\s*[\\}]\\s*)",
+          "name": "punctuation.section.property-list.end.bracket.curly.css"
+        },
+        {
+          "match": "(\\s*[\\;]\\s*",
+          "include": "punctuation.terminator.rule.css"
+        },
+        {
+          "match": "(?:(\\s*[^;\\s]+)(?:(\\s+[^;\\}]+))?)",
+          "captures": {
+            "1": {
+              "name": "meta.property-name.css"
+            },
+            "2": {
+              "name": "meta.property-value.css",
+              "patterns": [{ "include": "source.css#property-values" }]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

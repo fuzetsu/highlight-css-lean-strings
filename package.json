@@ -1,0 +1,26 @@
+{
+  "name": "highlight-css-lean-strings",
+  "publisher": "fuzetsu",
+  "version": "1.0.0",
+  "description": "highlights zaftig/bss lean strings in JS code",
+  "author": "Daniel Loomer",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "contributes": {
+    "grammars": [
+      {
+        "path": "./css-lean-string.json",
+        "scopeName": "inline.css-lean-string",
+        "injectTo": [
+          "source.js",
+          "source.mjs",
+          "source.ts",
+          "source.jsx",
+          "source.tsx"
+        ]
+      }
+    ]
+  }
+}
