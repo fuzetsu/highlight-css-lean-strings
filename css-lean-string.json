@@ -63,7 +63,7 @@
           "name": "punctuation.terminator.rule.css"
         },
         {
-          "match": "(?:(\\s*[^;\\s]+)(?:(\\s+[^;\\}]+))?)",
+          "match": "(?:(\\s*[^;\\s]+)(?:(\\s+[^;\\}\\`]+))?)",
           "captures": {
             "1": {
               "name": "meta.property-name.css",
