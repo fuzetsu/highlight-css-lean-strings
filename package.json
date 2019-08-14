@@ -13,7 +13,7 @@
   "engines": {
     "vscode": "^1.22.0"
   },
-  "icon": "./docs/after.png",
+  "icon": "docs/after.png",
   "contributes": {
     "grammars": [
       {
