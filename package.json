@@ -2,17 +2,20 @@
   "name": "highlight-css-lean-strings",
   "displayName": "Highlight CSS Lean Strings",
   "publisher": "fuzetsu",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "highlights zaftig/bss lean strings in JS code",
   "author": "Daniel Loomer",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fuzetsu/highlight-css-lean-strings.git"
+    "url": "https://github.com/fuzetsu/highlight-css-lean-strings.git"
   },
   "license": "MIT",
   "engines": {
     "vscode": "^1.22.0"
   },
+  "categories": [
+    "Programming Languages"
+  ],
   "icon": "docs/after.png",
   "contributes": {
     "grammars": [
