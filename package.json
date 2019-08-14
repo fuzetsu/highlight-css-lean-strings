@@ -4,6 +4,10 @@
   "version": "1.0.0",
   "description": "highlights zaftig/bss lean strings in JS code",
   "author": "Daniel Loomer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuzetsu/highlight-css-lean-strings.git"
+  },
   "license": "MIT",
   "engines": {
     "vscode": "^1.22.0"

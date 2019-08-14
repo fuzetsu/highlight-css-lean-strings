@@ -43,25 +43,31 @@
       "patterns": [
         {
           "match": "([^\\{]+(?=\\{))",
-          "name": "meta.selector.css"
+          "name": "meta.selector.css",
+          "captures": {
+            "1": {
+              "patterns": [{ "include": "source.css#selector" }]
+            }
+          }
         },
         {
-          "match": "(\\s*[\\{]\\s*)",
+          "match": "(\\s*\\{\\s*)",
           "name": "punctuation.section.property-list.begin.bracket.curly.css"
         },
         {
-          "match": "(\\s*[\\}]\\s*)",
+          "match": "(\\s*\\}\\s*)",
           "name": "punctuation.section.property-list.end.bracket.curly.css"
         },
         {
-          "match": "(\\s*[\\;]\\s*",
-          "include": "punctuation.terminator.rule.css"
+          "match": "(\\s*\\;\\s*)",
+          "name": "punctuation.terminator.rule.css"
         },
         {
           "match": "(?:(\\s*[^;\\s]+)(?:(\\s+[^;\\}]+))?)",
           "captures": {
             "1": {
-              "name": "meta.property-name.css"
+              "name": "meta.property-name.css",
+              "patterns": [{ "include": "source.css#property-names" }]
             },
             "2": {
               "name": "meta.property-value.css",
