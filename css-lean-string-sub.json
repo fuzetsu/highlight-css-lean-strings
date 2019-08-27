@@ -1,0 +1,10 @@
+{
+  "fileTypes": [],
+  "injectionSelector": "L:source.js meta.embedded.block.css",
+  "patterns": [
+    {
+      "include": "source.ts#template-substitution-element"
+    }
+  ],
+  "scopeName": "inline.css-lean-string-sub.injection"
+}
