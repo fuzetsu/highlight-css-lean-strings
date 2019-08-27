@@ -2,7 +2,7 @@
   "name": "highlight-css-lean-strings",
   "displayName": "Highlight CSS Lean Strings",
   "publisher": "fuzetsu",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "highlights zaftig/bss lean strings in JS code",
   "author": "Daniel Loomer",
   "repository": {
@@ -27,20 +27,6 @@
       {
         "path": "./css-lean-string.json",
         "scopeName": "inline.css-lean-string",
-        "injectTo": [
-          "source.js",
-          "source.mjs",
-          "source.ts",
-          "source.jsx",
-          "source.tsx"
-        ]
-      },
-      {
-        "path": "./css-lean-string-sub.json",
-        "scopeName": "inline.css-lean-string-sub.injection",
-        "embeddedLanguages": {
-          "meta.template.expression.ts": "typescript"
-        },
         "injectTo": [
           "source.js",
           "source.mjs",
