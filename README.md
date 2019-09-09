@@ -3,8 +3,8 @@
 A VSCode extension that provides language grammar for lean CSS used by certain css in js libraries.
 
 <div>
-  <img src="/docs/before.png" alt="example before highlighting" width="300">
-  <img src="/docs/after.png" alt="example after highlighting" width="300">
+  <img src="https://raw.githubusercontent.com/fuzetsu/highlight-css-lean-strings/master/docs/before.png" alt="example before highlighting" width="300">
+  <img src="https://raw.githubusercontent.com/fuzetsu/highlight-css-lean-strings/master/docs/after.png" alt="example after highlighting" width="300">
 </div>
 
 ## Supported Libraries
