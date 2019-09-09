@@ -7,7 +7,7 @@
     {
       "name": "string.js.taggedTemplate",
       "contentName": "meta.embedded.block.css",
-      "begin": "(?x)(\\b(?:z|css|b)(?:\\.(?:global|anim|style))?)\\s*(`)",
+      "begin": "(?x)(\\b(?:z|css|b|r|rnss)(?:\\.(?:global|anim|style))?)\\s*(`)",
       "beginCaptures": {
         "1": {
           "name": "entity.name.function.tagged-template.js"
