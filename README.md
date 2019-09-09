@@ -1,9 +1,11 @@
 # Highlight CSS Lean Strings
 
-A VSCode extension that provides language grammar for lean CSS as defined by Zaftig and bss CSS in JS libraries.
+A VSCode extension that provides language grammar for lean CSS used by certain css in js libraries.
 
-![example before highlighting](/docs/before.png)
-![example after highlighting](/docs/after.png)
+<div style="display: flex; flex-direction: row">
+  <img src="/docs/before.png" alt="example before highlighting">
+  <img src="/docs/after.png" alt="example after highlighting">
+</div>
 
 ## Supported Libraries
 
