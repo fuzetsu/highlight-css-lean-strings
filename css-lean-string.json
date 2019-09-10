@@ -55,7 +55,7 @@
           "name": "meta.property-list.css",
           "captures": {
             "1": {
-              "name": "meta.property-name.css",
+              "name": "support.type.property-name.css",
               "patterns": [{ "include": "source.css#property-names" }]
             },
             "2": {
@@ -63,7 +63,13 @@
             },
             "3": {
               "name": "meta.property-value.css",
-              "patterns": [{ "include": "source.css#property-values" }]
+              "patterns": [
+                {
+                  "match": "\\b(?:hairlineWidth|hairlineWidth|hw)\\b",
+                  "name": "support.constant.property-value.css"
+                },
+                { "include": "source.css#property-values" }
+              ]
             },
             "4": {
               "name": "punctuation.terminator.rule.css"
