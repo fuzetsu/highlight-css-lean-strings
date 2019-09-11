@@ -65,7 +65,7 @@
               "name": "meta.property-value.css",
               "patterns": [
                 {
-                  "match": "\\b(?:hairlineWidth|hairlineWidth|hw)\\b",
+                  "match": "\\b(?:hairlineWidth|hairline-width|hw)\\b",
                   "name": "support.constant.property-value.css"
                 },
                 { "include": "source.css#property-values" }
