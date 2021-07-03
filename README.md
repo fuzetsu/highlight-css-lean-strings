@@ -12,3 +12,6 @@ A VSCode extension that provides language grammar for lean CSS used by certain c
 - [Zaftig](https://github.com/fuzetsu/zaftig/)
 - [bss](https://github.com/porsager/bss)
 - [rnss](https://github.com/kufii/rnss)
+- [styled-map](https://github.com/scf4/styled-map)
+
+
